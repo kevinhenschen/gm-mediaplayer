@@ -38,6 +38,11 @@ AddMediaPlayerModel(
 	}
 )
 
+local function CubeSY(size) return 47.5*size end
+local function CubeSX(size) return 47.6*size end
+local function CubePY(size) return 23.725*size end
+local function CubePX(size) return -(23.76*size) end
+
 
 local function newScreen(x,y)
 	local x_ = x == 0.25 and "025" or (x == 0.5 and "05" or (x == 0.75 and "075" or x))
